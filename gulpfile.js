@@ -11,10 +11,12 @@ var sourcemaps = require('gulp-sourcemaps');
 var plumber = require('gulp-plumber');
 var concat = require('gulp-concat');
 var replace = require('gulp-replace');
+const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('styles', function () {
-  return gulp.src('app/styles/styles.scss')
+  return gulp.src('app/styles/styles.css')
   .pipe(plumber())
+  .pipe(autoprefixer())
   .pipe(sourcemaps.init())
     .pipe($.sass({
       style: 'expanded',
@@ -30,6 +32,7 @@ gulp.task('styles', function () {
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(reload({stream: true}));
 });
+
 
 gulp.task('jshint', function () {
   return gulp.src('app/scripts/**/*.js')

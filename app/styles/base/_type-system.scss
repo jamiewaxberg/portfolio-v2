@@ -1,15 +1,17 @@
-.type-system-rounded {
-  $base-border-radius: 3px !default;
-  $base-line-height: 1.5em !default;
-  $base-spacing: 1em !default;
-  $action-color: $pink !default;
-  $dark-gray: #333 !default;
-  $light-gray: #ddd !default;
-  $medium-screen: 40em !default;
-  $base-font-color: $dark-gray !default;
-  $sans-serif: "Nunito", sans-serif;
-  $sans-serif-2: "Varela Round", sans-serif;
+$base-border-radius: 3px !default;
+$base-line-height: 1.5em !default;
+$base-spacing: 1em !default;
+$action-color: $pink !default;
+$dark-gray: #333 !default;
+$light-gray: #ddd !default;
+$medium-screen: 40em !default;
+$base-font-color: $dark-gray !default;
+$sans-serif: "Nunito", sans-serif;
+$sans-serif-2: "Nexa", sans-serif;
+$base-font-family: $sans-serif;
+$header-font-family: $sans-serif-2;
 
+.type-system-rounded {
   @include clearfix;
   font-family: $sans-serif;
   text-align: left;
@@ -35,7 +37,7 @@
   }
 
   a {
-    color: $action-color;
+    color: $accent-color;
     text-decoration: none;
   }
 

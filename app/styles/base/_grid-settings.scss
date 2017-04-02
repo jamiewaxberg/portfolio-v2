@@ -14,9 +14,20 @@ $medium-screen-up: new-breakpoint(min-width $medium-screen);
 $large-screen-up: new-breakpoint(min-width $large-screen);
 $max-width-down: new-breakpoint(max-width $max-width);
 
+.full-width {
+	padding: 1em 0;
+	&:nth-of-type(even) {
+		background: $gray-lightest;
+	}
+}
+
 .row {
 	@include outer-container;
 	@include fill-parent;
+}
+
+.scroll-on-page {
+	width: 100%;
 }
 
 @include media($max-width-down) {

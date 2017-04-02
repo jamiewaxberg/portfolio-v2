@@ -4,8 +4,11 @@
   @include justify-content(space-between);
   margin-right: -2em;
   overflow: hidden;
+  h3 {
+  	width: 100%;
+  }
   .grid-box-wrap {
-    @include flex-basis(15em);
+    @include flex-basis(20em);
     @include flex-grow(1);
     margin: 0 2em 0 0;
   }

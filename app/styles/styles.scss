@@ -1,7 +1,7 @@
 // This partial imports all of the partials in the sass folder
 // Gulp watches this file and compiles the Sass to CSS
 // Comment out any partials that you do not need 
-
+$output-bourbon-deprecation-warnings: false;
 @import "bourbon";
 @import "neat";
 

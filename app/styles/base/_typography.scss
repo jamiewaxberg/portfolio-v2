@@ -7,6 +7,16 @@ body {
   line-height: $base-line-height;
 }
 
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
 h1,
 h2,
 h3,

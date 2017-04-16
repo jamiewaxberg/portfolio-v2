@@ -19,7 +19,7 @@ $base-z-index: 0;
 
 // Colors
 $blue: 							#84CAE7;
-$blue-dark:						#3A606E;
+$blue-dark:						#477998;
 $green:                 		#12cc9c;
 $red:                   		#e4342b;
 $yellow:                		#FCFC62;
@@ -54,12 +54,12 @@ $footer-bg-color: $dark-gray;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$base-accent-color: $blue;
+$base-accent-color: darken($accent-color, 15);
 $footer-font-color: $off-white;
 
 // Link Colors
 $base-link-color: $base-accent-color;
-$hover-link-color: darken($base-accent-color, 15);
+$hover-link-color: darken($base-accent-color, 25);
 $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
 

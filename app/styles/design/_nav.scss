@@ -17,8 +17,8 @@ nav.main-nav {
         border-bottom: none;
         color: $light-gray;
         &:hover {
-        	background: $accent-color;
-        	color: $dark-gray;
+        	background: lighten($base-accent-color, 10);
+        	color: $white;
         }
       }
     }

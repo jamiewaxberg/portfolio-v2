@@ -72,6 +72,10 @@ a {
   }
 }
 
+a.light:hover {
+	color: $hover-link-color-darker;
+}
+
 hr {
   border-bottom: $base-border;
   border-left: none;

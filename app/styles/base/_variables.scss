@@ -59,7 +59,8 @@ $footer-font-color: $off-white;
 
 // Link Colors
 $base-link-color: $base-accent-color;
-$hover-link-color: darken($base-accent-color, 25);
+$hover-link-color: darken($base-accent-color, 10);
+$hover-link-color-darker: darken($base-accent-color, 15);
 $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
 

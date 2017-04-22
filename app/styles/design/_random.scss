@@ -52,7 +52,9 @@ section.section {
 	  }
 	  &:hover {
 	    background-color: lighten($base-accent-color, 10);
-	    border-radius: 5px;
+	    border-radius: $base-border-radius * 2;
+      -webkit-border-radius: $base-border-radius * 2;
+      -moz-border-radius: $base-border-radius * 2;
 	    &:before {
 	    	color: $white;
 	    }

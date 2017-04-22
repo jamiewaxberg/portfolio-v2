@@ -39,16 +39,14 @@ section.section {
 	  border-right: $base-border;
 	  padding: 15px 25px;
 	  cursor: pointer;
-	  
+	  transition: all .15s linear;
 	  &:last-child {
 	    border-right-color: transparent;
 	  }
 	  &:before {
 	  	font-size: 24px;
 	  	text-align: center;
-    	transition: all .15s linear;
     	color: #111;
-    	@include transition(background-color .15s ease-in-out);
 	  }
 	  &:hover {
 	    background-color: lighten($base-accent-color, 10);

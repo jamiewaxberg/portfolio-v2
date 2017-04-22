@@ -17,8 +17,6 @@ nav.main-nav {
         border-bottom: none;
         color: $light-gray;
         border-radius: $base-border-radius;
-        -webkit-border-radius: $base-border-radius;
-        -moz-border-radius: $base-border-radius;
         &:hover {
         	background: lighten($base-accent-color, 10);
         	color: $white;

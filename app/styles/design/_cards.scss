@@ -9,6 +9,11 @@
     @include flex-basis(15em);
     @include flex-grow(1);
     margin: 0 2em 0 0;
+    border-top: 1px solid $gray-lightest;
+    padding-top: 2em;
+    .card-header h3 {
+			font-weight: bold;
+		}
   }
   
   .card-image {
@@ -38,4 +43,14 @@
   	text-style: italic;
   	color: $light-gray;
   }
+}
+
+@include media($medium-screen-up) {
+	.cards .card {
+		border-top: none;
+		padding-top: 0;
+		.card-header h3 {
+			font-weight: 400;
+		}
+	}
 }

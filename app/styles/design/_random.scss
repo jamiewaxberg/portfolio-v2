@@ -2,7 +2,7 @@
 
 #logo {
 	text-align: center;
-	margin: 1em auto 0;
+	margin: 0.8em auto 0;
 }
 
 .flexParent {
@@ -16,6 +16,13 @@
 	display: flex;
 	margin-bottom: 2em;
 }
+
+span.headerIcons {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+} 
 
 section.section {
 	margin: 1em 0;
@@ -40,6 +47,7 @@ section.section {
 	  padding: 15px 25px;
 	  cursor: pointer;
 	  transition: all .15s linear;
+	  float: left;
 	  &:last-child {
 	    border-right-color: transparent;
 	  }

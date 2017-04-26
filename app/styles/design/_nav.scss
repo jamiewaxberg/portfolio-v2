@@ -7,6 +7,7 @@ nav.main-nav {
 	>ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     li {
       margin: 0;
       a {
@@ -19,7 +20,7 @@ nav.main-nav {
         color: $light-gray;
         border-radius: $base-border-radius;
         &:hover {
-        	background: lighten($base-accent-color, 10);
+        	background: $base-accent-color;
         	color: $white;
         }
       }

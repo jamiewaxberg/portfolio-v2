@@ -23,6 +23,8 @@
     margin-bottom: 0.8em;
     img {
       width: 100%;
+      border: 1px solid $gray-lighter;
+      border-radius: $base-border-radius;
     }
   }
   ul.techs {

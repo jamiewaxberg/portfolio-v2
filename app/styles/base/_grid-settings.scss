@@ -16,14 +16,35 @@ $max-width-down: new-breakpoint(max-width $max-width);
 
 .full-width {
 	padding: 1em 0;
+	position: relative;
 	&:nth-of-type(even) {
 		background: $gray-lightest;
+	}
+	&:after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: -52px;
+    border: 26px solid transparent;
+    border-top-color: #fff;
+    width: 26px;
+    height: 26px;
+    left: 50%;
+    margin-left: -26px;
+    z-index: 1;
+	}
+	&:nth-of-type(2):after {
+		border-top-color: $gray-lightest;
+	}
+	&:last-of-type:after {
+		display: none;
 	}
 }
 
 .row {
 	@include outer-container;
 	@include fill-parent;
+  padding-top: 1.75em;
 }
 
 .scroll-on-page {

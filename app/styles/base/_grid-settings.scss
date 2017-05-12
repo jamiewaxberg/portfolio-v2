@@ -45,6 +45,7 @@ $max-width-down: new-breakpoint(max-width $max-width);
 	@include outer-container;
 	@include fill-parent;
   padding-top: 1.75em;
+  position: relative;
 }
 
 .scroll-on-page {

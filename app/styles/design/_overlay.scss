@@ -1,0 +1,48 @@
+#overlay {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 100;
+	background: rgba(0, 0, 0, 0.6);
+	#close {
+		fill: $white;
+		cursor: pointer;
+		position: absolute;
+		z-index: 200;
+		top: 8px;
+		right: 8px;
+	}
+}
+
+.modal {
+	display: block;
+	position: fixed;
+	max-width: 990px;
+	top: 7%;
+	height: 86%;
+	overflow-y: scroll;
+	width: 100%;
+	z-index: 200;
+	background: $white;
+	padding: 30px;
+	border-radius: $base-border-radius;
+	img {
+		margin-bottom: 20px;
+		border-radius: $base-border-radius;
+	}
+	&:last-of-type {
+		right: 50%;
+    margin-right: -496px;
+	}
+}
+
+@include media($max-width-down) {
+	#close {
+		height: 25px !important;
+		width: 25px !important;
+	}
+	.modal {
+		width: 90%;
+		left: 5%;
+	}
+}

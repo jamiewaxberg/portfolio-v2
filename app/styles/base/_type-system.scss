@@ -107,7 +107,7 @@ $header-font-family: $sans-serif-2;
     font-size: 1.05em;
     font-weight: 300;
     line-height: 1.4em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 
     span {
       font-family: $sans-serif-2;
@@ -116,12 +116,14 @@ $header-font-family: $sans-serif-2;
     }
   }
 
-  a.read-more {
+  a.read-more,
+  p.see-more {
     display: inline-block;
     font-family: $sans-serif-2;
     font-size: 0.8em;
     font-weight: 700;
-    margin-left: 0.2em;
+    margin: 0 0 1.4em 0.2em;
+
     position: relative;
     text-transform: uppercase;
     font-family: $base-font-family;
